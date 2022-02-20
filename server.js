@@ -23,9 +23,7 @@ const port = args.port || process.env.PORT || 3000 ;
 // If there is an error, put it on the console error, return, and exit with error code 1. 
 // Do not be nice about exiting.
 fs.readFile("./www/index.html", "utf8", (error, data) => {
-  if (error) {
-    console.error(error);
- }
+  
 
  //creating server 
  const server = http.createServer((req, a) => {
